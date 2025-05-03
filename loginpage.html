@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log In Page</title>
+        <style>
+            body {
+                background-image: url(https://static.vecteezy.com/system/resources/previews/026/749/021/non_2x/airplane-in-sky-background-free-photo.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                margin: 0;
+                display: flow-root;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .login-form {
+                width: 400px;
+                height: 420px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: auto;
+                margin-top: 120px;
+                padding: 20px;
+                border: 20px slategray;
+                border-radius: 10px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+                background-color: rgba(4, 4, 5, 0.7);
+                background-blend-mode: lighten;
+            }
+
+            h1 {
+                font-weight: 900;
+                font-size: 20px;
+                font-family: Arial;
+                position: absolute;
+                top: 32%; 
+                color: white;
+                display: flex;
+            }
+
+            #username-text{
+                border-radius: 50px;
+                border-style: none;
+                border: none;
+                width: 20%;
+                height: 25px;   
+                font-family: Arial;
+                font-weight: bold; 
+                padding: 3px;
+                position: absolute;
+                top: 42%;
+                left: 50%;
+                transform: translateX(-50%);
+                
+            }
+
+            #password-text{
+                border-radius: 50px;
+                border-style: none;
+                border: none;
+                width: 20%;
+                height: 25px;   
+                font-family: Arial;
+                font-weight: bold; 
+                padding: 3px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            img {
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                top: 22%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            #login-button {
+                border-radius: 50px;
+                border-style: none;
+                border: none;
+                width: 80px;
+                height: 50px;   
+                color: white;
+                font-family: Arial;
+                font-weight: bold; 
+                padding: 3px;
+                position: absolute;
+                top: 62%;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: rgba(6, 6, 109, 0.669);
+            }
+
+            #login-button:hover {
+                background-color: rgb(2, 2, 69);
+            }
+
+            #create-button {
+                border-radius: 50px;
+                border-style: none;
+                border: none;
+                width: 200px;
+                height: 50px;   
+                color: white;
+                font-family: Arial;
+                font-weight: bold; 
+                padding: 3px;
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: rgba(6, 109, 25, 0.669);
+            }
+
+            #create-button:hover {
+                background-color: rgb(2, 69, 14);
+            }
+
+            #keep-log {
+                position: absolute;
+                top: 56.7%;
+                left: 40%;
+            }
+            label {
+                position: absolute;
+                top: 57%;
+                left: 42%;
+                font-size: 14px;
+                color: white;
+                font-family: Arial;
+                font-weight: bold;
+            }
+
+            #access {
+                color: white;
+                font-family: Arial;
+                position: absolute;
+                top: 71%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            #help {
+                color: white;
+                font-family: Arial;
+                position: absolute;
+                top: 75%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+        </style>
+    </head>
+        <body>
+            <div class="login-form">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/013/790/110/small_2x/propeller-airplane-isolated-png.png">
+                <h1>LOG IN</h1>
+                <input type="text" id="username-text" name="username" placeholder="Username" required>
+                <input type="text" id="password-text" name="password" placeholder="Password" required>
+                <input type="checkbox" id="keep-log" name="keep"><label for="keep-log">Keep me logged in</label>
+                <button id="login-button">LOGIN</button>
+                <a id="access" href="">I can't access my account</a>
+                <a id="help" href="">Help?</a>
+                <button id="create-button">CREATE AN ACCOUNT</button>
+            </div>
+        </body>
+</html>
