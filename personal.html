@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Information</title>
+        <style>
+            body {
+                background-image: url(https://image.freepik.com/free-vector/vector-abstract-security-system-concept-with-fingerprint-technology-background_43778-497.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .information-form {
+                width: 400px;
+                height: auto;
+                margin: auto;
+                padding: 20px;
+                border: 20px slategray;
+                border-radius: 10px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+                background-color: rgba(255, 255, 255, .7);
+                background-blend-mode: lighten;
+                text-align: justify;
+            }
+
+            h1 {
+                font-weight: 900;
+                font-size: 20px;
+                font-family: Arial;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            td {
+                font-family: Arial;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            input, select {
+                border: 20px slategray;
+                border-radius: 10px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+                width: 200px;
+                height: 25px;
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="information-form">
+                <h1>PERSONAL INFORMATION FORM</h1>
+                <table>
+                    <tr>
+                        <td>NAME</td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td>ADDRESS</td>
+                        <td><input type="text" id="address" name="address" required></td>
+                    </tr>
+                    <tr>
+                        <td>BIRTHDATE</td>
+                        <td><input type="date" id="birthdate" name="birthdate" required></td>
+                    </tr>
+                    <tr>
+                        <td>GENDER</td>
+                        <td>
+                            <select id="gender" name="gen" required>
+                                <option value="">Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>
